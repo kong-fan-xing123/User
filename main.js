@@ -29,14 +29,14 @@ class User {
  }
 
  set password(_v) {
-  throw new SyntaxError("please use the change_password() func")
+  throw new SyntaxError("please use the change_password() function")
  }
  get password() {
   var t = confirm("do you want script read the password?")
   if (t) {
    return this.#passwd;
   } else {
-   throw Error("the user rejection read the password property")
+   throw Error("the user rejection read the password property.")
   }
  }
 }
