@@ -12,7 +12,7 @@ class User {
  /**
   * 
   * @param {string} password 
-  * @returns If the password is correct
+  * @returns If the password is correct,return true ,else return false
   */
  check_password(password) {
   return this.#passwd === password
